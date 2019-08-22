@@ -10,6 +10,14 @@
     <string name="hint_mail">メールアドレスを入力</string>
     <string name="hint_password">パスワードを入力</string>
 
+    <!--TodoList-->
+    <string name="button_logout">ログアウト</string>
+
+    <!--Dialog Message-->
+    <string name="title_logout">ログアウトしますか？</string>
+    <string name="positive_logout">はい</string>
+    <string name="negative_logout">いいえ</string>
+
     <!--Firebase Login Register Message-->
     <string name="login_register_faild">ログインに失敗しました</string>
     <string name="empty_mail">メールアドレスを入力してください</string>

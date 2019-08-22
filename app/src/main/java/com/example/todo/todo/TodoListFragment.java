@@ -17,6 +17,7 @@ import androidx.fragment.app.Fragment;
 import com.example.todo.R;
 import com.example.todo.data.TodoData;
 import com.example.todo.login.LoginActivity;
+import com.example.todo.util.DialogUtils;
 import com.google.android.material.floatingactionbutton.FloatingActionButton;
 
 import java.util.ArrayList;
@@ -151,19 +152,19 @@ public class TodoListFragment extends Fragment implements TodoListContract.View 
 
     @Override
     public void onCreateOptionsMenu(final Menu menu, final MenuInflater inflater) {
-        inflater.inflate(R.menu.menu_main, menu);
+        inflater.inflate(R.menu.menu_todo_list, menu);
     }
 
     @Override
     public boolean onOptionsItemSelected(final MenuItem item) {
-//        switch (item.getItemId()) {
-//            case R.id.menu_logout:
-//                DialogUtils.showCallbackPositiveDialog(getContext(),
-//                        R.string.title_logout, R.string.positive_logout,
-//                        R.string.negative_logout,
-//                        (dialog, which) -> mPresenter.logoutAccount());
-//                break;
-//        }
+        switch (item.getItemId()) {
+            case R.id.menu_logout:
+                DialogUtils.showCallbackPositiveDialog(getContext(),
+                        R.string.title_logout, R.string.positive_logout,
+                        R.string.negative_logout,
+                        (dialog, which) -> mPresenter.logoutAccount());
+                break;
+        }
         return true;
     }
 }
