@@ -1,4 +1,17 @@
 <resources>
     <string name="app_name">Todo</string>
     <string name="action_settings">Settings</string>
+
+    <!--Login-->
+    <string name="button_login">ログイン</string>
+    <string name="button_register">登録する</string>
+    <string name="label_mail">メールアドレス</string>
+    <string name="label_password">パスワード</string>
+    <string name="hint_mail">メールアドレスを入力</string>
+    <string name="hint_password">パスワードを入力</string>
+
+    <!--Firebase Login Register Message-->
+    <string name="login_register_faild">ログインに失敗しました</string>
+    <string name="empty_mail">メールアドレスを入力してください</string>
+    <string name="empty_password">パスワードを入力してください</string>
 </resources>
