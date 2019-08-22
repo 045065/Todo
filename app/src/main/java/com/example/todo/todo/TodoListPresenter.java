@@ -40,7 +40,10 @@ public class TodoListPresenter implements TodoListContract.Presenter {
     public TodoListPresenter(@NonNull final TodoListContract.View todoView) {
         mTodoView = todoView;
         mTodoView.setPresenter(this);
+    }
 
+    @Override
+    public void initFirebaseDB() {
         mUser = FirebaseAuth.getInstance().getCurrentUser();
         mUid = mUser.getUid();
         mDatabase = FirebaseDatabase.getInstance();

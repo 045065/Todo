@@ -35,5 +35,6 @@ public class TodoListActivity extends AppCompatActivity {
             ActivityUtils.addFragmentToActivity(getSupportFragmentManager(), todoListFragment, R.id.contentFrame);
         }
         mTodoListPresenter = new TodoListPresenter(todoListFragment);
+        mTodoListPresenter.initFirebaseDB();
     }
 }

@@ -46,5 +46,10 @@ public interface TodoListContract {
          * @param todoData
          */
         void completeTodo(TodoData todoData);
+
+        /**
+         * FirebaseDatabaseの設定
+         */
+        void initFirebaseDB();
     }
 }
