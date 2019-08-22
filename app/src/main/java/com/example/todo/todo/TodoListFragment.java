@@ -17,6 +17,7 @@ import androidx.fragment.app.Fragment;
 import com.example.todo.R;
 import com.example.todo.data.TodoData;
 import com.example.todo.login.LoginActivity;
+import com.example.todo.save.SaveActivity;
 import com.example.todo.util.DialogUtils;
 import com.google.android.material.floatingactionbutton.FloatingActionButton;
 
@@ -25,6 +26,8 @@ import java.util.ArrayList;
 import butterknife.BindView;
 import butterknife.ButterKnife;
 import butterknife.OnClick;
+
+import static com.example.todo.save.SaveActivity.EXTRA_TODO_DATA;
 
 /**
  * Todo一覧表示用Fragment
@@ -137,17 +140,17 @@ public class TodoListFragment extends Fragment implements TodoListContract.View 
      * Todo追加画面表示
      */
     private void showAddTodoUi() {
-//        Intent intent = new Intent(getContext(), SaveActivity.class);
-//        startActivity(intent);
+        Intent intent = new Intent(getContext(), SaveActivity.class);
+        startActivity(intent);
     }
 
     /**
      * Todo詳細・編集画面表示
      */
     private void showDetailEditTodoUi(final TodoData toDoData) {
-//        Intent intent = new Intent(getContext(), SaveActivity.class);
-//        intent.putExtra(EXTRA_TODO_DATA, toDoData);
-//        startActivity(intent);
+        Intent intent = new Intent(getContext(), SaveActivity.class);
+        intent.putExtra(EXTRA_TODO_DATA, toDoData);
+        startActivity(intent);
     }
 
     @Override
