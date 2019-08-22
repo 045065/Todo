@@ -14,4 +14,10 @@
     <string name="login_register_faild">ログインに失敗しました</string>
     <string name="empty_mail">メールアドレスを入力してください</string>
     <string name="empty_password">パスワードを入力してください</string>
+
+    <!--Firebase TodoData-->
+    <string name="todo_data_users">users</string>
+    <string name="todo_data_title">title</string>
+    <string name="todo_data_content">content</string>
+    <string name="todo_data_isCompleted">isCompleted</string>
 </resources>

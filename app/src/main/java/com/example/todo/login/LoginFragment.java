@@ -1,5 +1,6 @@
 package com.example.todo.login;
 
+import android.content.Intent;
 import android.os.Bundle;
 import android.view.LayoutInflater;
 import android.view.View;
@@ -12,6 +13,7 @@ import androidx.annotation.Nullable;
 import androidx.fragment.app.Fragment;
 
 import com.example.todo.R;
+import com.example.todo.todo.TodoListActivity;
 import com.google.android.material.snackbar.Snackbar;
 
 import butterknife.BindView;
@@ -107,8 +109,8 @@ public class LoginFragment extends Fragment implements LoginContract.View {
 
     @Override
     public void showTodoListUi() {
-//        Intent intent = new Intent(getContext(), TodoListActivity.class);
-//        startActivity(intent);
-//        getActivity().finish();
+        Intent intent = new Intent(getContext(), TodoListActivity.class);
+        startActivity(intent);
+        getActivity().finish();
     }
 }
